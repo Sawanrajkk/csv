@@ -1,0 +1,6 @@
+Test Case Name,Description,Preconditions,Test Steps,Expected Result,Priority
+Login with valid credentials,Verify user can login with valid username and password,User must be registered,Open login page -> Enter valid email -> Enter valid password -> Click Login,User should be logged in successfully and redirected to dashboard,High
+Login with invalid password,Verify error message when password is incorrect,User must be registered,Open login page -> Enter valid email -> Enter wrong password -> Click Login,Error message should be displayed and login should fail,High
+Login with empty fields,Verify validation messages for empty login fields,None,Open login page -> Click Login without entering any data,Validation messages should be displayed for required fields,Medium
+Forgot password flow,Verify forgot password functionality works,User email must exist in system,Click Forgot Password -> Enter registered email -> Click Submit,Password reset email should be sent to user,Medium
+Logout functionality,Verify user can logout successfully,User must be logged in,Click Logout button,User should be logged out and redirected to login page,Low
